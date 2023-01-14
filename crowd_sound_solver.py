@@ -2,6 +2,8 @@ import os
 import pydub.scipy_effects
 from pydub import AudioSegment, silence
 
+# this code is over 5 months old.
+
 class Analyzer():
 	def __init__(self, audio_path) -> None:
 		self.sound = AudioSegment.from_mp3(audio_path)
