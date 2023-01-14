@@ -4,9 +4,6 @@ from pydub import AudioSegment, silence
 
 class Analyzer():
 	def __init__(self, audio_path) -> None:
-		self.audio_path = audio_path
-		self.audio_dir = self.__get_audio_dir__()
-
 		self.sound = AudioSegment.from_mp3(audio_path)
 
 	def __get_audio_dir__(self):
